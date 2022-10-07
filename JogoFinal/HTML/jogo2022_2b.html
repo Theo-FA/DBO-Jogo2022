@@ -46,12 +46,13 @@
 
 				//Ínicio
 				let partidas = 0;
+				let inimigocount = 0;
+				let disparocount = 0;
 				alert("Almirante, a base está sendo atacada por naves paraguaias!\nÀs armas!!");	
 				alert("Sua missão é destruir o máximo de inimigos possíveis antes que eles cheguem à base. Boa sorte!");
 
 				function comeca(){
-					let inimigocount = 0;
-					let disparocount = 0;
+					inimigocount = 0;
 					document.querySelector("#start").remove();
 					if(partidas>0){document.querySelector("#over").remove();};
 					explosao_f.pause();
