@@ -33,7 +33,7 @@
 				document.querySelector("#esquerda").addEventListener("touchend",()=>{ para()});
 				document.querySelector("#disparo").addEventListener("click",()=>{ gerarDisparo()});
 				document.querySelector("#start").addEventListener("click",()=>{ comeca()});
-        	    document.querySelector("#direita").addEventListener("mousedown",()=>{ move("direita")});
+        	    		document.querySelector("#direita").addEventListener("mousedown",()=>{ move("direita")});
 				document.querySelector("#direita").addEventListener("mouseup",()=>{para()});
 				document.querySelector("#direita").addEventListener("touchstart",()=>{ move("direita")});
 				document.querySelector("#direita").addEventListener("touchend",()=>{para()});
@@ -45,13 +45,13 @@
 				let explosao_f = new Audio("../audio/explosao(final).mp3");
 
 				//Ínicio
-				let inimigocount = 0;
-				let disparocount = 0;
 				let partidas = 0;
-				alert("Almirante, a base está sendo atacada por navas paraguaias!\nÀs armas!!");	
+				alert("Almirante, a base está sendo atacada por naves paraguaias!\nÀs armas!!");	
 				alert("Sua missão é destruir o máximo de inimigos possíveis antes que eles cheguem à base. Boa sorte!");
 
 				function comeca(){
+					let inimigocount = 0;
+					let disparocount = 0;
 					document.querySelector("#start").remove();
 					if(partidas>0){document.querySelector("#over").remove();};
 					explosao_f.pause();
