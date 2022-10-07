@@ -1,0 +1,85 @@
+body{
+    background-color: black;
+    font-family: 'Silkscreen';
+}
+#fundo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+     position: relative;
+     width: auto;
+     height: 80vh;
+     margin: auto;
+     background-image: url(../img/fundo.gif);
+     background-repeat: no-repeat;
+     background-size: cover;
+     text-align: center;
+     border: 5px solid white;
+     padding: 5px;
+     color: white;
+     font-family: 'Silkscreen';
+     font-size: 7vh;
+	}
+.painel {
+    display: flex;
+    position: relative;
+    text-align: center;
+    justify-content: space-between;
+    margin: auto;
+    height: 15vw;
+    background-color: black;
+}  
+#div1 {
+    position: relative;
+    width: 30px; 
+    height: 30px; 
+    left: auto;
+    background-image: url(../img/nave.png);
+}
+.inimigo{
+    position: absolute;
+    top: 0vh;
+    width: 30px; 
+    height: 30px; 
+    background-image: url(../img/inimigo.png); 
+}
+.disparo{
+    position: absolute;
+    width: 5px; 
+    height: 20px; 
+    background-color: rgb(255, 0, 0); 
+}
+h1{
+    color: white;
+    font-size: 3vh;
+}
+h2{
+    color: white;
+    font-size: 2vh; 
+}
+button{
+    height: 8vh;
+    width: 8vh;
+    margin: 1vh;
+    color: white;
+    background-color: black;
+    font-size: 5vh;
+    border: 1px black solid;
+}
+#start{
+    position: absolute;
+    top: 40%;
+    width: fit-content;
+    font-family: 'Silkscreen';
+    font-size: 40px;
+    background-color: black;
+    border: 5px white solid;
+    padding: 2px;
+}
+#over{
+    position: absolute;
+    top: 5%;
+};
+.controle{
+    border: 5px white solid;
+}
